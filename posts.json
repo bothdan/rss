@@ -1,0 +1,39 @@
+{
+    "channel": {
+        "title": "CNN.com - World",
+		"link":"http://www.cnn.com/WORLD/index.html?eref=rss_world",
+		"description":"CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.",
+		"language":"en-US",
+		"pubDate":"Tue, 18 Aug 2015 18:26:42 GMT",
+		"image":{
+				"url": "img.png"
+			},
+		"item": [
+            {
+                "title": "How to Create an RSS Feed with PHP and MySQL",
+				"description": "This example displays a web page with single button, when we click on this button, an XML file will be displayed in the RSS format. But the content of this file will be loaded dynamically from the database.",
+				"link": "http://www.bewebdeveloper.com/tutorial-about-how-to-create-an-rss-feed-with-php-and-mysql",
+				"pubDate":"Tue, 18 Aug 2015 15:26:42 GMT"
+            },
+            {
+                "title": "Crop photo using PHP and jQuery",
+				"description": "Give the possibility for users to upload photos dynamically is good, but users upload photos with different sizes, and usually that cause problem in the website design. So in this tutorial I'll show you how to crop photo using PHP and jQuery.",
+				"link": "http://www.bewebdeveloper.com/tutorial-about-crop-photo-using-php-and-jquery",
+				"pubDate":"Mon, 17 Aug 2015 19:26:42 GMT"
+            },
+            {
+                "title": "Using Ajax with PHP/MySQL",
+                "description": "If you are bit familiar with basics of jQuery JavaScript library, next thing you want to do is learn jQuery Ajax to add and delete records from MySQL database table. In this basic tutorial we are going to do the same, we will focus on learning jQuery to send POST data to a PHP file and respond back with results or errors. Without having to reload the page, the Ajax technique is a very neat way to add or delete / database records, also it looks very cool.",
+                "link": "http://www.sanwebe.com/2012/04/ajax-add-delete-sql-records-jquery-php",
+				"pubDate":"Sun, 16 Aug 2015 18:26:42 GMT"
+            },
+            {
+                "title": "Using Ajax with native JavaScript",
+                "description": "This example displays a web page with single button, when clicking on this button; the browser will load the current time from the web server using Ajax.",
+                "link": "http://www.bewebdeveloper.com/tutorial-about-using-ajax-with-native-javascript",
+				"pubDate":"Sat, 15 Aug 2015 13:26:42 GMT"
+            }
+        ]
+    }
+}
+
