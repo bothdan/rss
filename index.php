@@ -49,17 +49,17 @@
 </head>
 
 <body>
-<p>
-	<form name="form" method="post" action="">
-		<select name="select">
-			  <option value="">-- select RSS</option>
-			  <option value="http://rss.cnn.com/rss/cnn_world.rss">CNN</option>
-			  <option value="http://feeds.reuters.com/Reuters/worldNews">Reuters</option>
-			  <option value="posts.json">Local File</option>
-		</select>
-		<input type="submit" value="Select">
-	<form>
-</p>
+
+<form name="form" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+	<select name="select">
+		  <option value="">-- select RSS</option>
+		  <option value="http://rss.cnn.com/rss/cnn_world.rss">CNN</option>
+		  <option value="http://feeds.reuters.com/Reuters/worldNews">Reuters</option>
+		  <option value="posts.json">Local File</option>
+	</select>
+	<p><input type="submit" value="Select"></p>
+</form>
+
 
 <?php
 $RssClass = new RssClass;
@@ -75,7 +75,7 @@ if($rssURL){
 		$language = $jfo->channel->language;
 		$pubDate = $RssClass -> DateFormat($jfo->channel->pubDate);
 		$image = $jfo->channel->image->url;
-		// copy the posts array to a php var
+		// copy the items array to a php var
 		$items = $jfo->channel->item;
 ?>
 	<div class="container">
@@ -113,7 +113,7 @@ if($rssURL){
 
 class RssClass{
 
-	function DateFormat($TheDate){	//convert date to difrent format
+	function DateFormat($TheDate){	//convert date to different format
 		$NewDate=date("F d, Y", strtotime($TheDate));  
 		return $NewDate;
 	}
